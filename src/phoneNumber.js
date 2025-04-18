@@ -1,0 +1,1 @@
+export const phoneNumber = "689 689 689";
