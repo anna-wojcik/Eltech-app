@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Eltech-app/static/css/main.9689f3b3.css",
+    "main.js": "/Eltech-app/static/js/main.adb4d61b.js",
+    "static/js/453.058810f9.chunk.js": "/Eltech-app/static/js/453.058810f9.chunk.js",
+    "static/media/hero.png": "/Eltech-app/static/media/hero.b990345e4d785d90ef98.png",
+    "static/media/vector-maps.svg": "/Eltech-app/static/media/vector-maps.58c359b9c34dd0f5bd490d9134897aec.svg",
+    "static/media/service-icon.svg": "/Eltech-app/static/media/service-icon.15b51dbe3e5ed59fb9add244c63d8b9a.svg",
+    "static/media/optical-fiber-icon.svg": "/Eltech-app/static/media/optical-fiber-icon.3938462a80569a849ef29cf2ffd9bd93.svg",
+    "static/media/solar-panel-icon.svg": "/Eltech-app/static/media/solar-panel-icon.7043a161150a6d239598f1a1d9775247.svg",
+    "static/media/bulb-icon.svg": "/Eltech-app/static/media/bulb-icon.11545a57dfbd16eb2940f1bf5e13c9a1.svg",
+    "static/media/sun.svg": "/Eltech-app/static/media/sun.1ec6afb58b4faea33f74fcbd61bf21ca.svg",
+    "index.html": "/Eltech-app/index.html",
+    "static/media/phone.svg": "/Eltech-app/static/media/phone.780eafa73352ff511b8d5c10f611dfe1.svg",
+    "main.9689f3b3.css.map": "/Eltech-app/static/css/main.9689f3b3.css.map",
+    "main.adb4d61b.js.map": "/Eltech-app/static/js/main.adb4d61b.js.map",
+    "453.058810f9.chunk.js.map": "/Eltech-app/static/js/453.058810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9689f3b3.css",
+    "static/js/main.adb4d61b.js"
+  ]
+}
