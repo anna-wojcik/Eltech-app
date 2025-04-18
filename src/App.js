@@ -5,6 +5,7 @@ import AboutPage from "./features/aboutPage/AboutPage";
 import CareerPage from "./features/careerPage/CareerPage";
 import ContactPage from "./features/contactPage/ContactPage";
 import Header from "./features/Header";
+import Footer from "./features/Footer";
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
         </Route>
       </Switch>
 
-      <h2>Footer</h2>
+      <Footer />
     </HashRouter>
   );
 };
