@@ -1,5 +1,5 @@
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
-import { Box, Paragraph, Picture, Title, StyledSwiper, StyledSwiperSlide, Wrapper } from './styled';
+import { Box, Paragraph, Picture, Title, StyledSwiper, StyledSwiperSlide } from './styled';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
