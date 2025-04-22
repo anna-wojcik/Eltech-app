@@ -21,14 +21,14 @@ export const slides = [
     },
     {
         id: 3,
-        name: "Damian W",
+        name: "Damian W.",
         city: "Łęczna",
         opinion: "Zamówiłem montaż fotowoltaiki i jestem bardzo zadowolony. Fachowe doradztwo, szybka realizacja i realne oszczędności na rachunkach za prąd!",
         image: person3,
     },
     {
         id: 4,
-        name: "Karol K",
+        name: "Karol K.",
         city: "Lubartów",
         opinion: "Montaż wykonany szybko i sprawnie. Zespół był bardzo pomocny i kompetentny.",
         image: person4,
