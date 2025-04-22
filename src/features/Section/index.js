@@ -1,7 +1,7 @@
 import { BlackContent, Description, StyledSection, Title } from "./styled";
 
-export const Section = ({ isMiddle, title, extraTitle, content, body }) => (
-    <StyledSection $displayMiddle={isMiddle}>
+export const Section = ({ isMiddle, title, extraTitle, content, offMargin, body }) => (
+    <StyledSection $displayMiddle={isMiddle} $offMargin={offMargin}>
         <Title>
             {title}
             <br />

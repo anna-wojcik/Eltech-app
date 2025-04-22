@@ -12,16 +12,31 @@ export const StyledSection = styled.section`
         text-align: center;
     `}
 
+    ${({ $offMargin }) => $offMargin && css`
+        margin: 0;
+    `}
+
     @media(max-width: 1400px){
         margin: 0 50px;
+
+        ${({ $offMargin }) => $offMargin && css`
+            margin: 0;
+        `}
     }
 
     @media(max-width: 850px){
         padding: 50px 0;
+
+        ${({ $offMargin }) => $offMargin && css`
+            margin: 0;
+        `}
     }
 
     @media(max-width: 640px){
         margin: 0 20px;
+        ${({ $offMargin }) => $offMargin && css`
+            margin: 0;
+        `}
     }
 `;
 
