@@ -16,7 +16,7 @@ export const Slider = ({ slides }) => {
                 pagination={{ clickable: true }}
                 grabCursor={true}
                 centeredSlides={true}
-                initialSlide={1}
+                initialSlide={0}
                 speed={600}
                 autoplay={{
                     delay: 6000,
