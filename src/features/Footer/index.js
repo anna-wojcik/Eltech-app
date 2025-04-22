@@ -1,6 +1,6 @@
 import { StyledFooter, Paragraph, Span, ListIcons, Wrapper } from "./styled";
 import Logo from "../Logo";
-import { socials } from "../socials";
+import { socials } from "../../socials";
 import { LinkIcon } from "../LinkIcon";
 
 export const Footer = () => (

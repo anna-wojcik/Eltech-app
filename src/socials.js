@@ -1,6 +1,6 @@
-import { ReactComponent as FacebookIcon } from "../images/facebookIcon.svg";
-import { ReactComponent as InstagramIcon } from "../images/instagramIcon.svg";
-import { styleIcon } from "./LinkIcon";
+import { ReactComponent as FacebookIcon } from "./images/facebookIcon.svg";
+import { ReactComponent as InstagramIcon } from "./images/instagramIcon.svg";
+import { styleIcon } from "./features/LinkIcon";
 
 export const socials = [
     {
