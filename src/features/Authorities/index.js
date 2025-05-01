@@ -1,5 +1,5 @@
 import { Item, List, Image, Name, Role, Box } from "./styled";
-import { authoritiesList } from "../authoritiesList";
+import { authoritiesList } from "../../authoritiesList";
 
 export const Authorities = () => (
     <>

@@ -1,4 +1,4 @@
-import prezesImage from "../images/prezes.png";
+import prezesImage from "./images/prezes.png";
 
 export const authoritiesList = [
     {
