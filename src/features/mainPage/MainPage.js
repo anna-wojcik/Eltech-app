@@ -1,27 +1,36 @@
 import Hero from '../Hero';
-import Section from '../Section';
+// import SectionMain from '../SectionMain';
 import About from '../About';
 import ServiceList from '../ServiceList';
 import Slider from '../Slider';
 import { slides } from '../../slides';
+import { Title, BlackContent, Description } from "./styled";
+import { StyledSection } from "../StyledSection";
 
 export default () => (
     <>
         <Hero />
-        <Section body={<About />} />
-        <Section
-            isMiddle={true}
-            title="Obszary działalności"
-            content="Wybierz usługę, z której chcesz skorzystać, a my zajmiemy się resztą! Profesjonalna realizacja, nowoczesne rozwiązania i najwyższa jakość usług."
-            body={<ServiceList />}
-        />
-        <Section
-            isMiddle={true}
-            title="Co Mówią"
-            extraTitle="O Nas Klienci"
-            content="Zaufało nam setki klientów, dołącz do nich i bądź zadowolony z wykonanej przez nas usługi"
-            offMargin={true}
-            body={<Slider slides={slides} />}
-        />
+        <StyledSection>
+            <About />
+        </StyledSection>
+        <StyledSection $displayMiddle>
+            <Title>Obszary działalności</Title>
+            <br />
+            <Description>
+                Wybierz usługę, z której chcesz skorzystać, a my zajmiemy się resztą! Profesjonalna realizacja, nowoczesne rozwiązania i najwyższa jakość usług.
+            </Description>
+            <ServiceList />
+        </StyledSection>
+        <StyledSection $displayMiddle $offMargin>
+            <Title>
+                Co Mówią
+                <br />
+                <BlackContent>O Nas Klienci</BlackContent>
+            </Title>
+            <Description>
+                Zaufało nam setki klientów, dołącz do nich i bądź zadowolony z wykonanej przez nas usługi
+            </Description>
+            <Slider slides={slides} />
+        </StyledSection>
     </>
 );
