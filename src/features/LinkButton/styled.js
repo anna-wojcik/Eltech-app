@@ -16,6 +16,7 @@ export const StyledLinkButton = styled(Link)`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 40px 0;
 
     &:hover {
         width: 400px;
@@ -48,6 +49,7 @@ export const StyledLinkButton = styled(Link)`
     }
 
     @media(max-width: 850px) {
+        margin: 20px 0;
         height: 60px;
         font-size: 16px;
         width: 242px;
