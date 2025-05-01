@@ -6,12 +6,13 @@ import CareerPage from "./features/careerPage/CareerPage";
 import ContactPage from "./features/contactPage/ContactPage";
 import Header from "./features/Header";
 import Footer from "./features/Footer";
+import ScrollHandler from "./features/ScrollHandler";
 
 function App() {
   return (
     <HashRouter basename="/eltech.pl">
+      <ScrollHandler />
       <Header />
-      
 
       <Switch>
         <Route path="/oferta">

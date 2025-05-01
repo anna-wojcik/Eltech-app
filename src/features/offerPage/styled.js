@@ -84,6 +84,10 @@ export const Paragraph = styled.p`
         font-size: 20px;
     }
 
+    @media(max-width: 850px){
+        font-size: 16px;
+    }
+
     ${({ $serviceParagraph }) => $serviceParagraph && css`
         font-weight: 500px;
         line-height: 1;
