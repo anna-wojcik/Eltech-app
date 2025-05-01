@@ -7,6 +7,7 @@ export const StyledFooter = styled.footer`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 60px;
 
     @media(max-width: 1400px){
         padding: 50px;
