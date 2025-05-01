@@ -5,14 +5,22 @@ export const StyledHeader = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 100px;
+    padding: 0 100px;
+    box-shadow: 0px 0px 16px rgba(0,0,0,.08),
+        48.6492px 63.508px 80px rgba(0,0,0,.04),
+        9.72983px 12.7016px 13px rgba(0,0,0,.02);
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
+    width: 100%;
 
     @media(max-width: 1400px){
-        margin: 0 50px;
+        padding: 0 50px;
     }
 
     @media(max-width: 640px){
-        margin: 0 20px;
+        padding: 0 20px;
     }
 `;
 
