@@ -1,16 +1,19 @@
-import { Switch, Route, HashRouter, Redirect } from "react-router-dom/cjs/react-router-dom.min";
+import { Switch, Route, HashRouter } from "react-router-dom/cjs/react-router-dom.min";
 import MainPage from "./features/mainPage/MainPage";
 import OfferPage from "./features/offerPage/OfferPage";
 import AboutPage from "./features/aboutPage/AboutPage";
-import CareerPage from "./features/careerPage/CareerPage";
+import CareerPage from "./features/career/careerPage/CareerPage";
 import ContactPage from "./features/contactPage/ContactPage";
 import Header from "./features/Header";
 import Footer from "./features/Footer";
 import ScrollHandler from "./features/ScrollHandler";
+import ApplicationPage from "./features/career/applicationPage/ApplicationPage";
+import RouteListener from "./features/RouteListener";
 
 function App() {
   return (
     <HashRouter basename="/eltech.pl">
+      <RouteListener />
       <ScrollHandler />
       <Header />
 
@@ -26,6 +29,9 @@ function App() {
         </Route>
         <Route path="/kontakt">
           <ContactPage />
+        </Route>
+        <Route path="/formularz-aplikacyjny">
+          <ApplicationPage />
         </Route>
         <Route path="/">
           <MainPage />

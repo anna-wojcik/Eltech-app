@@ -1,5 +1,4 @@
 import Hero from '../Hero';
-// import SectionMain from '../SectionMain';
 import About from '../About';
 import ServiceList from '../ServiceList';
 import Slider from '../Slider';
