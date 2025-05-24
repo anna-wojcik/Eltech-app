@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Eltech-app/static/css/main.dc011374.css",
-    "main.js": "/Eltech-app/static/js/main.5af20067.js",
+    "main.js": "/Eltech-app/static/js/main.42c406ff.js",
     "static/js/453.058810f9.chunk.js": "/Eltech-app/static/js/453.058810f9.chunk.js",
     "static/media/service.png": "/Eltech-app/static/media/service.916067f4295b581a2e02.png",
     "static/media/photovoltaic-installations.png": "/Eltech-app/static/media/photovoltaic-installations.e7300edfc39ea84f0a0e.png",
@@ -31,12 +31,14 @@
     "index.html": "/Eltech-app/index.html",
     "static/media/phone.svg": "/Eltech-app/static/media/phone.780eafa73352ff511b8d5c10f611dfe1.svg",
     "static/media/facebookIcon.svg": "/Eltech-app/static/media/facebookIcon.c86c9160f434f5f752b172ce0fe890d9.svg",
+    "static/media/menu.svg": "/Eltech-app/static/media/menu.fd2388132e9bd826bd4a58efbf8954b5.svg",
+    "static/media/cross.svg": "/Eltech-app/static/media/cross.4df8f262f182853a80cde581cbc9b9ac.svg",
     "main.dc011374.css.map": "/Eltech-app/static/css/main.dc011374.css.map",
-    "main.5af20067.js.map": "/Eltech-app/static/js/main.5af20067.js.map",
+    "main.42c406ff.js.map": "/Eltech-app/static/js/main.42c406ff.js.map",
     "453.058810f9.chunk.js.map": "/Eltech-app/static/js/453.058810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dc011374.css",
-    "static/js/main.5af20067.js"
+    "static/js/main.42c406ff.js"
   ]
 }
