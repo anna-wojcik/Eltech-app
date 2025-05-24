@@ -27,13 +27,26 @@ export const StyledHeader = styled.header`
 export const Wrapper = styled.div`
     display: flex;
     align-items: center;
-    gap: 64px;
+    gap: 44px;
 
     ${({ $phoneWrapper }) => $phoneWrapper && css`
         gap: 4px;
+
+        @media(max-width: 1100px){
+            display: none;
+        }
     `};
+    @media(max-width: 1100px){
+        gap: 20px;
+    }
 `;
 
 export const Paragraph = styled.p`
     margin: 0;
+`;
+
+export const ButtonMenu = styled.button`
+    border: none;
+    background: none;
+    cursor: pointer;
 `;
