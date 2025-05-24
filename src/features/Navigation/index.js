@@ -14,17 +14,17 @@ const Navigation = ({ setShowSidebar }) => {
                             <img src={crossIcon} alt="Cross icon" />
                         </ButtonMenu>
                     </li>
-                    <li onClick={() => setShowSidebar(false)}>
-                        <StyledNavLink to="/oferta">Oferta</StyledNavLink>
+                    <li>
+                        <StyledNavLink to="/oferta" onClick={() => setShowSidebar(false)}>Oferta</StyledNavLink>
                     </li>
-                    <li onClick={() => setShowSidebar(false)}>
-                        <StyledNavLink to="/o-nas">O Nas</StyledNavLink>
+                    <li>
+                        <StyledNavLink to="/o-nas" onClick={() => setShowSidebar(false)}>O Nas</StyledNavLink>
                     </li>
-                    <li onClick={() => setShowSidebar(false)}>
-                        <StyledNavLink to="/kariera">Kariera</StyledNavLink>
+                    <li>
+                        <StyledNavLink to="/kariera" onClick={() => setShowSidebar(false)}>Kariera</StyledNavLink>
                     </li>
-                    <li onClick={() => setShowSidebar(false)}>
-                        <StyledNavLink to="/kontakt">Kontakt</StyledNavLink>
+                    <li>
+                        <StyledNavLink to="/kontakt" onClick={() => setShowSidebar(false)}>Kontakt</StyledNavLink>
                     </li>
                 </List>
             </StyledNavigation>
