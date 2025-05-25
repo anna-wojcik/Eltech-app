@@ -28,7 +28,7 @@ export const Wrapper = styled.div`
 export const Title = styled.h2`
     font-size: 40px;
     font-weight: 700;
-    color: #000000;
+    color: ${({ theme }) => theme.colors.title};
     margin: 0;
 
     @media(max-width: 1024px) {
@@ -45,6 +45,7 @@ export const Description = styled.p`
     font-weight: 400;
     margin-top: 30px;
     margin-bottom: 100px;
+    color: ${({ theme }) => theme.colors.content};
 
     @media(max-width: 1024px) {
         font-size: 22px;
@@ -57,7 +58,7 @@ export const Description = styled.p`
 `;
 
 export const PinkContent = styled.span`
-    color: #DF18FB;
+    color: ${({ theme }) => theme.colors.highLightedContent};
 `;
 
 export const Image = styled.img`

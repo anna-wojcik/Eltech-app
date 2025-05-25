@@ -23,8 +23,8 @@ export const List = styled.ul`
 export const Item = styled.li`
     width: 460px;
     border-radius: 20px;
-    background: #252525;
-    color: #FFFFFF;
+    background: ${({ theme }) => theme.colors.careerPage.itemBackground};
+    color: ${({ theme }) => theme.colors.careerPage.content};
     padding: 34px;
 
     @media(max-width: 1400px) {
@@ -42,6 +42,7 @@ export const Paragraph = styled.p`
     margin: 0;
     margin-bottom: 34px;
     font-size: 24px;
+    color: ${({ theme }) => theme.colors.careerPage.content};
 
     ${({ $typeStyle }) => $typeStyle && css`
         font-size: 20px;
@@ -97,19 +98,19 @@ export const Image = styled.img`
 
 export const Button = styled.button`
     height: 40px;
-    background: #DF18FB;
-    color: #FFFFFF;
+    background: ${({ theme }) => theme.colors.careerPage.buttonBackground};
+    color: ${({ theme }) => theme.colors.careerPage.buttonContent};
     border: none;
     border-radius: 30px;
     width: 100%;
     cursor: pointer;
 
     &:hover {
-        background: #EB5DFF;
+        background: ${({ theme }) => theme.colors.careerPage.buttonBackgroundHover};
     }
 
     &:active {
-        background: #F4A5FF;
+        background: ${({ theme }) => theme.colors.careerPage.buttonBackgroundActive};
     }
 
     @media(max-width: 1400px) {

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Title = styled.h2`
-    color: #DF18FB;
+    color: ${({ theme }) => theme.colors.highLightedContent};
     font-size: 40px;
     font-weight: 500;
     margin: 0;
@@ -16,11 +16,11 @@ export const Title = styled.h2`
 `;
 
 export const BlackContent = styled.span`
-    color: #000000;
+    color: ${({ theme }) => theme.colors.title};
 `;
 
 export const Description = styled.p`
-    color: #000000;
+    color: ${({ theme }) => theme.colors.content};
     font-size: 24px;
     font-weight: 300;
     max-width: 884px;

@@ -21,7 +21,7 @@ export const BackgroundImage = styled.div`
 export const Box = styled.div`
     width: 550px;
     height: 200px;
-    background: white;
+    background: ${({ theme }) => theme.colors.offerPage.backgroundBox};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +45,7 @@ export const Box = styled.div`
 export const Title = styled.h2`
     font-size: 40px;
     font-weight: 700;
-    color: #5064E2;
+    color: ${({ theme }) => theme.colors.offerPage.title};
     max-width: 300px;
     margin: 0;
     text-align: center;
@@ -79,6 +79,7 @@ export const Paragraph = styled.p`
     font-weight: 400;
     line-height: 1.5;
     margin: 0;
+    color: ${({ theme }) => theme.colors.offerPage.content};
 
     @media(max-width: 1400px){
         font-size: 20px;
@@ -92,6 +93,7 @@ export const Paragraph = styled.p`
         font-weight: 500px;
         line-height: 1;
         text-align: center;
+        color: ${({ theme }) => theme.colors.offerPage.itemContent};
     `};
 `;
 
@@ -99,6 +101,7 @@ export const SubTitle = styled.h3`
     font-size: 30px;
     font-weight: 700;
     margin: 60px 0;
+    color: ${({ theme }) => theme.colors.offerPage.content};
 
     @media(max-width: 1400px){
         margin: 40px 0;
@@ -129,7 +132,8 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-    border: 2px solid #DF18FB;
+    border: 2px solid ${({ theme }) => theme.colors.offerPage.border};
+    background: ${({ theme }) => theme.colors.offerPage.backgroundBox};
     border-radius: 20px;
     height: 200px;
     display: flex;

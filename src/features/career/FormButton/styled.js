@@ -5,8 +5,8 @@ export const StyledButton = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #DF18FB;
-    color: #FFFFFF;
+    background: ${({ theme }) => theme.colors.formButton.background};
+    color: ${({ theme }) => theme.colors.formButton.color};
     border: none;
 
     ${({ $inForm }) => $inForm && css`
@@ -52,10 +52,10 @@ export const StyledButton = styled.button`
     `}
 
     &:hover {
-        background: #EB5DFF;
+        background: ${({ theme }) => theme.colors.formButton.hover};
     }
 
     &:active {
-        background: #F4A5FF;
+        background: ${({ theme }) => theme.colors.formButton.active};
     }
 `;

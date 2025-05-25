@@ -8,7 +8,7 @@ export const Container = styled.div`
     background-position: center;
     background-position-y: -50px;
     height: 720px;
-    background-color: black;
+    background-color: ${({ theme }) => theme.colors.hero.background};
     display: grid;
     grid-template-columns: 100px 1fr 1fr 100px;
     grid-template-rows: 50px 1fr 1fr 50px;
@@ -33,7 +33,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-    color: white;
+    color: ${({ theme }) => theme.colors.hero.content};
     font-size: 38px;
     font-weight: 500px;
     margin: 0;
@@ -51,7 +51,7 @@ export const Title = styled.h1`
 `;
 
 export const Description = styled.p`
-    color: white;
+    color: ${({ theme }) => theme.colors.hero.content};
     font-size: 28px;
     font-weight: 500px;
     line-height: 1.3;
@@ -81,7 +81,7 @@ export const Description = styled.p`
 
 export const Box = styled.div`
     height: 140px;
-    background: #252525;
+    background: ${({ theme }) => theme.colors.subHeader.background};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +98,7 @@ export const Box = styled.div`
 export const SubHeader = styled.h2`
     margin: 0;
     font-size: 40px;
-    color: white;
+    color: ${({ theme }) => theme.colors.subHeader.content};
     
     @media(max-width: 1024px) {
         font-size: 30px;
@@ -111,7 +111,7 @@ export const SubHeader = styled.h2`
 
 export const Year = styled.span`
     font-size: 60px;
-    color: #DF18FB;
+    color: ${({ theme }) => theme.colors.subHeader.year};
 
     @media(max-width: 1024px) {
         font-size: 40px;

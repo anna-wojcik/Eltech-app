@@ -24,12 +24,13 @@ export const StyledLink = styled(Link)`
     justify-content: space-between;
     height: 280px;
     width: 400px;
-    box-shadow: 0px 0px 11px -4px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 11px -4px ${({ theme }) => theme.colors.serviceList.boxShadow};
     padding: 20px;
-    color: #5064E2;
+    color: ${({ theme }) => theme.colors.serviceList.content};
+    background: ${({ theme }) => theme.colors.serviceList.background};
 
     &:hover {
-        box-shadow: 0px 0px 30px 0px rgba(80, 100, 226, 1);
+        box-shadow: 0px 0px 30px 0px ${({ theme }) => theme.colors.serviceList.boxShadowHover};
     }
 
     @media(max-width: 1024px) {

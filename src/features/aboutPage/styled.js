@@ -5,6 +5,7 @@ export const Paragraph = styled.p`
     font-weight: 400;
     line-height: 1.5;
     margin: 0;
+    color: ${({ theme }) => theme.colors.aboutPage.title};
 
     @media(max-width: 1400px){
         font-size: 20px;
@@ -37,6 +38,7 @@ export const Title = styled.h2`
     font-size: 30px;
     font-weight: 700;
     margin: 60px 0;
+    color: ${({ theme }) => theme.colors.aboutPage.title};
 
     @media(max-width: 1400px){
         margin: 40px 0;
@@ -68,7 +70,7 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-    border-left: 2px solid #5064E2;
+    border-left: 2px solid ${({ theme }) => theme.colors.aboutPage.border};
     padding: 20px;
     height: 250px;
     display: flex;
@@ -87,7 +89,7 @@ export const Item = styled.li`
 `;
 
 export const SubTitle = styled.h3`
-    color: #DF18FB;
+    color: ${({ theme }) => theme.colors.aboutPage.subTitle};
     font-size: 20px;
     font-weight: 500;
     margin: 0;

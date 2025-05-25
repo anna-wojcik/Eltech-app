@@ -1,18 +1,18 @@
 import styled from "styled-components"
 
 export const LinkIcon = styled.a`
-    color: #FFFFFF;
+    color: ${({ theme }) => theme.colors.linkIcon.color};
     transition: color 0.3s;
     display: flex;
     justify-content: center;
     align-items: center;
 
     &:hover {
-        color: #DF18FB;
+        color: ${({ theme }) => theme.colors.linkIcon.hover};
     }
 
     &:active {
-        color: #F18EFF;
+        color: ${({ theme }) => theme.colors.linkIcon.active};
     }
 `;
 

@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import styled, { css } from "styled-components";
+import { ReactComponent as CrossIcon } from "../../images/cross.svg";
 
 export const StyledNavigation = styled.nav`
     ${({ $sidebar }) => $sidebar && css`
@@ -27,7 +28,7 @@ export const List = styled.ul`
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        background: white;
+        background: ${({ theme }) => theme.colors.navigation.background};
         width: 250px;
         gap: 24px;
         padding: 20px;
@@ -40,19 +41,19 @@ export const List = styled.ul`
 
 export const StyledNavLink = styled(NavLink)`
     text-decoration: none;
-    color: #171717;
+    color: ${({ theme }) => theme.colors.navigation.content};
     font-size: 20px;
     font-weight: 400;
 
     &.active {
-        color: #5064E2;
-        border-bottom: 3px solid #5064E2;
+        color: ${({ theme }) => theme.colors.navigation.active};
+        border-bottom: 3px solid ${({ theme }) => theme.colors.navigation.active};
         padding-bottom: 10px;
         transition: padding 0.1s linear;
     }
     &:hover {
-        color: #5064E2;
-        border-bottom: 3px solid #5064E2;
+        color: ${({ theme }) => theme.colors.navigation.hover};
+        border-bottom: 3px solid ${({ theme }) => theme.colors.navigation.hover};
         padding-bottom: 10px;
         transition: padding 0.1s linear;
     }
@@ -62,4 +63,8 @@ export const ButtonMenu = styled.button`
     border: none;
     background: none;
     cursor: pointer;
+`;
+
+export const Cross = styled(CrossIcon)`
+    color: ${({ theme }) => theme.colors.navigation.content};
 `;

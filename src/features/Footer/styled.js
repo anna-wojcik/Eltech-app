@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const StyledFooter = styled.footer`
     min-height: 340px;
-    background: #252525;
+    background: ${({ theme }) => theme.colors.footer.background};
     padding: 50px 100px;
     display: flex;
     flex-direction: column;
@@ -49,7 +49,7 @@ export const Wrapper = styled.div`
 export const Paragraph = styled.p`
     font-size: 24px;
     font-weight: 400;
-    color: #ffffff;
+    color: ${({ theme }) => theme.colors.footer.content};
     margin: 0;
     max-width: 900px;
 

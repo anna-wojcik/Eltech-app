@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-    background: #F1F1F1;
+    background: ${({ theme }) => theme.colors.jobDetail.containerBackground};
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,7 +16,7 @@ export const Container = styled.div`
 
 export const Paragraph = styled.p`
     margin: 0;
-    color: #000000;
+    color: ${({ theme }) => theme.colors.jobDetail.content};
     font-size: 24px;
 
     @media(max-width: 1400px) {
@@ -30,7 +30,7 @@ export const Paragraph = styled.p`
     ${({ $pink }) => $pink && css`
         font-size: 30px;
         font-weight: 600;
-        color: #DF18FB;
+        color: ${({ theme }) => theme.colors.jobDetail.jobName};
 
         @media(max-width: 1400px) {
             font-size: 24px;
@@ -50,6 +50,7 @@ export const Title = styled.h2`
     font-size: 30px;
     font-weight: 600;
     margin: 0;
+    color: ${({ theme }) => theme.colors.jobDetail.title};
 
     @media(max-width: 1400px){
         font-size: 24px;
@@ -72,6 +73,7 @@ export const List = styled.ul`
 export const Item = styled.li`
     padding: 6px;
     font-size: 24px;
+    color: ${({ theme }) => theme.colors.jobDetail.itemContent};
 
     @media(max-width: 1400px) {
         font-size: 20px;
@@ -90,19 +92,19 @@ export const Wrapper = styled.div`
 export const ButtonShowForm = styled.button`
     width: 400px;
     height: 100px;
-    background: #5064E2;
-    color: #FFFFFF;
+    background: ${({ theme }) => theme.colors.jobDetail.button};
+    color: ${({ theme }) => theme.colors.jobDetail.buttonColor};
     font-size: 50px;
     font-weight: 600;
     border: none;
     margin: 50px;
 
     &:hover {
-        background: #2188FF;
+        background: ${({ theme }) => theme.colors.jobDetail.buttonHover};
     }
 
     &:active {
-        background: #4C98EF;
+        background: ${({ theme }) => theme.colors.jobDetail.buttonActive};
     }
 
     @media(max-width: 1400px) {

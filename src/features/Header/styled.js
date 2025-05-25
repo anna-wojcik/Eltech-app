@@ -1,4 +1,6 @@
 import styled, { css } from "styled-components";
+import { ReactComponent as PhoneIcon } from "../../images/phone.svg";
+import { ReactComponent as MenuIcon } from "../../images/menu.svg";
 
 export const StyledHeader = styled.header`
     height: 80px;
@@ -6,12 +8,10 @@ export const StyledHeader = styled.header`
     justify-content: space-between;
     align-items: center;
     padding: 0 100px;
-    box-shadow: 0px 0px 16px rgba(0,0,0,.08),
-        48.6492px 63.508px 80px rgba(0,0,0,.04),
-        9.72983px 12.7016px 13px rgba(0,0,0,.02);
+    box-shadow: 0px 0px 8px 0px ${({ theme }) => theme.colors.header.boxShadow};
     position: sticky;
     top: 0;
-    background: white;
+    background: ${({ theme }) => theme.colors.header.background};
     z-index: 1000;
     width: 100%;
 
@@ -22,6 +22,14 @@ export const StyledHeader = styled.header`
     @media(max-width: 640px){
         padding: 0 20px;
     }
+`;
+
+export const Phone = styled(PhoneIcon)`
+    color: ${({ theme }) => theme.colors.phone.color};
+`;
+
+export const Menu = styled(MenuIcon)`
+    color: ${({ theme }) => theme.colors.phone.color};
 `;
 
 export const Wrapper = styled.div`
@@ -43,6 +51,7 @@ export const Wrapper = styled.div`
 
 export const Paragraph = styled.p`
     margin: 0;
+    color: ${({ theme }) => theme.colors.navigation.content};
 `;
 
 export const ButtonMenu = styled.button`

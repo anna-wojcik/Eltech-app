@@ -1,11 +1,9 @@
 import { useState } from "react";
-import { ButtonMenu, Paragraph, StyledHeader, Wrapper } from "./styled";
-import phoneIcon from "../../images/phone.svg";
+import { ButtonMenu, Menu, Paragraph, Phone, StyledHeader, Wrapper } from "./styled";
 import Navigation from "../Navigation";
 import Logo from "../Logo";
 import ThemeSwitch from "../ThemeSwitch";
 import { phoneNumber } from "../../phoneNumber";
-import menuIcon from "../../images/menu.svg";
 import { useWindowDimensions } from "../../useWindowDimensions";
 
 export const Header = () => {
@@ -25,7 +23,7 @@ export const Header = () => {
                     <ThemeSwitch />
                     <ButtonMenu onClick={() => setShowSidebar(true)}
                     >
-                        <img src={menuIcon} alt="Menu icon" />
+                        <Menu />
                     </ButtonMenu>
                 </Wrapper>
             </StyledHeader>
@@ -38,7 +36,7 @@ export const Header = () => {
             <Navigation />
             <Wrapper>
                 <Wrapper $phoneWrapper>
-                    <img src={phoneIcon} height={24} />
+                    <Phone />
                     <Paragraph>{phoneNumber}</Paragraph>
                 </Wrapper>
                 <ThemeSwitch />

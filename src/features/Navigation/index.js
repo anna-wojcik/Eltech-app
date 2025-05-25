@@ -1,6 +1,5 @@
-import { ButtonMenu, List, StyledNavigation, StyledNavLink } from "./styled";
+import { ButtonMenu, Cross, List, StyledNavigation, StyledNavLink } from "./styled";
 import { useWindowDimensions } from "../../useWindowDimensions";
-import crossIcon from "../../images/cross.svg";
 
 const Navigation = ({ setShowSidebar }) => {
     const width = useWindowDimensions();
@@ -11,7 +10,7 @@ const Navigation = ({ setShowSidebar }) => {
                 <List $sidebar="sidebar">
                     <li>
                         <ButtonMenu onClick={() => setShowSidebar(false)}>
-                            <img src={crossIcon} alt="Cross icon" />
+                            <Cross />
                         </ButtonMenu>
                     </li>
                     <li>

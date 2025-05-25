@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-    background: #F1F1F1;
+    background: ${({ theme }) => theme.colors.applicatinForm.background};
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,9 +37,9 @@ export const BackgroundImage = styled.div`
 export const Title = styled.h2`
     font-size: 30px;
     font-weight: 400;
-    color: #000000; 
+    color: ${({ theme }) => theme.colors.applicatinForm.title}; 
     width: 100%;
-    border-bottom: 1px solid #D9D9D9;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.applicatinForm.border};
     padding: 30px 0 20px;
     margin: 0;
 
@@ -60,14 +60,14 @@ export const Description = styled.p`
     ${({ $firm }) => $firm && css`
         font-size: 34px;
         font-weight: 800;
-        color: #5064E2;
+        color: ${({ theme }) => theme.colors.applicatinForm.firm};
         padding: 20px;
     `}
 
     ${({ $jobName }) => $jobName && css`
         font-size: 24px;
         font-weight: 500;
-        color: #000000;
+        color: ${({ theme }) => theme.colors.applicatinForm.content};
     `}
 
     @media(max-width: 1400px){
@@ -99,7 +99,7 @@ export const StyledForm = styled.form`
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: #FFFFFF;
+    background: ${({ theme }) => theme.colors.applicatinForm.backgroundForm};
     width: 900px;
     border-radius: 50px;
     position: absolute;
@@ -142,10 +142,10 @@ export const Box = styled.div`
 export const SubTitle = styled.h3`
     font-size: 24px;
     font-weight: 400;
-    color: #000000;
+    color: ${({ theme }) => theme.colors.applicatinForm.title};
     width: 100%;
     text-align: left;
-    border-bottom: 2px solid #D9D9D9;
+    border-bottom: 2px solid ${({ theme }) => theme.colors.applicatinForm.border};
     margin: 0;
 
     @media(max-width: 1400px){
@@ -163,7 +163,7 @@ export const Wrapper = styled.div`
     align-items: flex-start;
     width: 100%;
     font-size: 20px;
-    color: #717171;
+    color: ${({ theme }) => theme.colors.applicatinForm.labelColor};
     gap: 4px;
     text-align: left;
 
@@ -184,7 +184,7 @@ export const GenderContainer = styled.div`
 `;
 
 export const SpanRed = styled.span`
-    color: #D20000;
+    color: ${({ theme }) => theme.colors.applicatinForm.required};
 
     ${({ $error }) => $error && css`
         font-size: 12px;
@@ -193,11 +193,11 @@ export const SpanRed = styled.span`
 
 export const StyledInput = styled.input`
     border-radius: 10px; 
-    border: 1px solid #C9C9C9;
+    border: 1px solid ${({ theme }) => theme.colors.applicatinForm.borderInput};
     padding: 10px 20px;
     width: 100%;
     font-size: 18px;
-    color: #717171;
+    color: ${({ theme }) => theme.colors.applicatinForm.colorInput};
 
     ${({ $cvInput }) => $cvInput && css`
         height: 100px;
@@ -215,11 +215,11 @@ export const StyledInput = styled.input`
 
 export const StyledSelect = styled.select`
     border-radius: 10px; 
-    border: 1px solid #C9C9C9;
+    border: 1px solid ${({ theme }) => theme.colors.applicatinForm.borderInput};
     padding: 10px 20px;
     width: 100%;
     font-size: 18px;
-    color: #717171;
+    color: ${({ theme }) => theme.colors.applicatinForm.colorInput};
     background: none;
 
     @media(max-width: 1400px){

@@ -15,10 +15,11 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-    background: #D9D9D9;
+    background: ${({ theme }) => theme.colors.authorities.background};
     border-radius: 20px;
     width: 300px;
-
+    box-shadow: 0px 0px 3px 0px ${({ theme }) => theme.colors.authorities.boxShadow};
+    
     @media(max-width: 1200px){
         width: 250px;
     }
