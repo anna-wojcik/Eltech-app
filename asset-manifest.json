@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Eltech-app/static/css/main.566ac412.css",
-    "main.js": "/Eltech-app/static/js/main.b0306bc9.js",
+    "main.js": "/Eltech-app/static/js/main.49d08e84.js",
     "static/js/453.058810f9.chunk.js": "/Eltech-app/static/js/453.058810f9.chunk.js",
     "static/media/service.png": "/Eltech-app/static/media/service.916067f4295b581a2e02.png",
     "static/media/photovoltaic-installations.png": "/Eltech-app/static/media/photovoltaic-installations.e7300edfc39ea84f0a0e.png",
@@ -29,18 +29,19 @@
     "static/media/instagramIcon.svg": "/Eltech-app/static/media/instagramIcon.3f267bea907e131657b9c478ce7bf452.svg",
     "static/media/sunDark.svg": "/Eltech-app/static/media/sunDark.57bcb33749bc5392cd8017f73eef6484.svg",
     "static/media/sunLight.svg": "/Eltech-app/static/media/sunLight.1ec6afb58b4faea33f74fcbd61bf21ca.svg",
-    "static/media/localisation.svg": "/Eltech-app/static/media/localisation.2b2f8ee3b53eb459d225f923c98cc4c7.svg",
+    "static/media/localisation.svg": "/Eltech-app/static/media/localisation.0192d5f0e7c2a0d456a7c810b1452da0.svg",
     "index.html": "/Eltech-app/index.html",
+    "static/media/message.svg": "/Eltech-app/static/media/message.6eadda5e72eba87a0677fbe31284fd43.svg",
     "static/media/phone.svg": "/Eltech-app/static/media/phone.940eaf688125516c12168998fa78587c.svg",
     "static/media/facebookIcon.svg": "/Eltech-app/static/media/facebookIcon.c86c9160f434f5f752b172ce0fe890d9.svg",
     "static/media/menu.svg": "/Eltech-app/static/media/menu.85315daff5ff7207ef08eedbe24079fd.svg",
     "static/media/cross.svg": "/Eltech-app/static/media/cross.1de0afb6823eb5015808542691e3489b.svg",
     "main.566ac412.css.map": "/Eltech-app/static/css/main.566ac412.css.map",
-    "main.b0306bc9.js.map": "/Eltech-app/static/js/main.b0306bc9.js.map",
+    "main.49d08e84.js.map": "/Eltech-app/static/js/main.49d08e84.js.map",
     "453.058810f9.chunk.js.map": "/Eltech-app/static/js/453.058810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.566ac412.css",
-    "static/js/main.b0306bc9.js"
+    "static/js/main.49d08e84.js"
   ]
 }
