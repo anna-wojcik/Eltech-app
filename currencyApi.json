@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "last_updated_at": "2025-05-29T23:59:59Z"
+  },
+  "data": {
+    "CAD": {
+      "code": "CAD",
+      "value": 0.3705679367
+    },
+    "EUR": {
+      "code": "EUR",
+      "value": 0.2359192173
+    },
+    "GBP": {
+      "code": "GBP",
+      "value": 0.1988680564
+    },
+    "NOK": {
+      "code": "NOK",
+      "value": 2.7160698367
+    },
+    "USD": {
+      "code": "USD",
+      "value": 0.268486595
+    }
+  }
+}
