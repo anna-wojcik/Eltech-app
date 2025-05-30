@@ -2,13 +2,14 @@ import { StyledFooter, Paragraph, Span, ListIcons, Wrapper } from "./styled";
 import Logo from "../Logo";
 import { socials } from "../../socials";
 import { LinkIcon } from "../LinkIcon";
+import { companyInfo } from "../../companyInfo";
 
 export const Footer = () => (
     <StyledFooter>
         <Wrapper>
             <Logo />
             <Paragraph>
-                <Span>ELTECH sp. z o.o.</Span> z siedzibą w Lublinie adres: ul. Prezydenta Gabriela Narutowicza 18/3, 20-004 Lublin, nr KRS 0000826013, NIP: 7123398771, REGON: 385414795
+                <Span>{companyInfo.name}</Span> z siedzibą w Lublinie adres: {companyInfo.address}, {companyInfo.postalCode} {companyInfo.city}, nr KRS {companyInfo.krsNumber}, NIP: {companyInfo.nipNumber}, REGON: {companyInfo.regonNumber}
             </Paragraph>
         </Wrapper>
         <Wrapper $secondWrapper>
@@ -22,7 +23,7 @@ export const Footer = () => (
                 ))}
             </ListIcons>
             <Paragraph $smallFont>
-                ELTECH sp. z o. o. © 20225. Wszelkie prawa zastrzeżone
+                {companyInfo.name} 20225. Wszelkie prawa zastrzeżone
             </Paragraph>
             <Paragraph $smallFont>
                 Projekt i wykonanie: Anna Wójcik
