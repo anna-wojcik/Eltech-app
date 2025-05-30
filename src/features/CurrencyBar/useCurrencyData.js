@@ -10,7 +10,7 @@ export const useCurrencyData = () => {
     useEffect(() => {
         const getCurrencyData = async () => {
             try {
-                const response = await axios.get(url);
+                const response = await axios.get("currencyApi.json");
                 const currencyData = await response.data;
                 setData({
                     state: "success",
