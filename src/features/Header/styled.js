@@ -8,7 +8,7 @@ export const StyledHeader = styled.header`
     justify-content: space-between;
     align-items: center;
     padding: 0 100px;
-    box-shadow: 0px 0px 8px 0px ${({ theme }) => theme.colors.header.boxShadow};
+    box-shadow: 0px 4px 8px -2px ${({ theme }) => theme.colors.header.boxShadow};
     position: sticky;
     top: 0;
     background: ${({ theme }) => theme.colors.header.background};
