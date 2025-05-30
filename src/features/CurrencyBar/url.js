@@ -1,0 +1,1 @@
+export const url = "https://api.currencyapi.com/v3/latest?apikey=cur_live_yFO9onfDtt2lmUYROIq9hzVEprJWjamSKLeLJOOF&currencies=EUR%2CGBP%2CUSD%2CNOK%2CCAD&base_currency=PLN";

@@ -14,6 +14,7 @@ import ApplicationPage from "./features/career/applicationPage/ApplicationPage";
 import RouteListener from "./features/RouteListener";
 import { themeLight, themeDark } from "./theme";
 import { selectIsDark } from './features/ThemeSwitch/themeSlice';
+import CurrencyBar from './features/CurrencyBar';
 
 function App() {
   const isDark = useSelector(selectIsDark);
@@ -24,6 +25,7 @@ function App() {
       <HashRouter basename="/eltech.pl">
         <RouteListener />
         <ScrollHandler />
+        <CurrencyBar />
         <Header />
 
         <Switch>

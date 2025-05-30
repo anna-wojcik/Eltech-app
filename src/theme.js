@@ -157,6 +157,9 @@ export const themeLight = {
             linkHover: colorName.lavender,
             linkActive: colorName.mauve,
         },
+        currencyBar: {
+            content: colorName.black,
+        }
     }
 };
 
@@ -292,5 +295,8 @@ export const themeDark = {
             linkHover: colorName.lavender,
             linkActive: colorName.mauve,
         },
+        currencyBar: {
+            content: colorName.white,
+        }
     },
 };
