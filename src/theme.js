@@ -13,7 +13,7 @@ const colorName = {
     heliotrope: "#F18EFF",
     lavender: "#EB5DFF",
     mauve: "#F4A5FF",
-    alto: "#D9D9D9", 
+    alto: "#D9D9D9",
     doveGray: "#717171",
     silver: "#C9C9C9",
     guardsmanRed: "#D20000",
@@ -30,7 +30,7 @@ export const themeLight = {
         title: colorName.black,
         content: colorName.black,
         highLightedContent: colorName.electricViolet,
-        bodyBackground: colorName.white, 
+        bodyBackground: colorName.white,
         header: {
             background: colorName.white,
             boxShadow: colorName.gunPowder,
@@ -51,6 +51,12 @@ export const themeLight = {
         },
         phone: {
             color: colorName.codGray,
+        },
+        localisation: {
+            color: colorName.royalBlue,
+        },
+        message: {
+            color: colorName.royalBlue,
         },
         themeSwitch: {
             background: colorName.mercury,
@@ -118,7 +124,7 @@ export const themeLight = {
             containerBackground: colorName.seashell,
             title: colorName.black,
             content: colorName.black,
-            jobName: colorName.electricViolet, 
+            jobName: colorName.electricViolet,
             itemContent: colorName.black,
             buttonColor: colorName.white,
             button: colorName.royalBlue,
@@ -159,7 +165,11 @@ export const themeLight = {
         },
         currencyBar: {
             content: colorName.black,
-        }
+        },
+        contactPage: {
+            title: colorName.black,
+            content: colorName.black,
+        },
     }
 };
 
@@ -189,6 +199,12 @@ export const themeDark = {
         },
         phone: {
             color: colorName.white,
+        },
+        localisation: {
+            color: colorName.dodgerBlue,
+        },
+        message: {
+            color: colorName.dodgerBlue,
         },
         themeSwitch: {
             background: colorName.iron,
@@ -256,7 +272,7 @@ export const themeDark = {
             containerBackground: colorName.doveGray,
             title: colorName.white,
             content: colorName.white,
-            jobName: colorName.electricViolet, 
+            jobName: colorName.electricViolet,
             itemContent: colorName.white,
             buttonColor: colorName.white,
             button: colorName.royalBlue,
@@ -297,6 +313,10 @@ export const themeDark = {
         },
         currencyBar: {
             content: colorName.white,
-        }
+        },
+        contactPage: {
+            title: colorName.white,
+            content: colorName.white,
+        },
     },
 };

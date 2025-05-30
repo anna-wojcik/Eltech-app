@@ -1,8 +1,7 @@
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import { List, Item, Paragraph, Box, Button, Image } from "./styled";
+import { List, Item, Paragraph, Box, Button, Localisation } from "./styled";
 import { jobOfferList } from "../../../jobOfferList";
-import localisationImage from "../../../images/localisation.svg";
 import { setSelectedJobId } from "../careerSlice";
 
 export const JobOffers = () => {
@@ -16,7 +15,7 @@ export const JobOffers = () => {
                         <Paragraph $typeStyle>{type}</Paragraph>
                         <Paragraph>{name}</Paragraph>
                         <Box>
-                            <Image src={localisationImage} alt="localisation"></Image>
+                            <Localisation />
                             <Paragraph $marginNone>{city}</Paragraph>
                         </Box>
                         <Link to="/kariera#jobDetail">

@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { ReactComponent as LocalisationIcon } from "../../../images/localisation.svg";
 
 export const List = styled.ul`
     padding: 0;
@@ -89,11 +90,8 @@ export const Box = styled.div`
     }
 `;
 
-export const Image = styled.img`
-    @media(max-width: 1400px) {
-        height: 30px;
-        width: 30px;   
-    }
+export const Localisation = styled(LocalisationIcon)`
+    color: ${({ theme }) => theme.colors.localisation.color};
 `;
 
 export const Button = styled.button`
