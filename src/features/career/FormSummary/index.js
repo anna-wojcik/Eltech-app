@@ -27,8 +27,6 @@ export const FormSummary = () => {
     }
     const selectedJob = jobOfferList.find(task => task.id === selectedJobId);
 
-    console.log(getFormData);
-
     const checkData = (data, pattern) => {
         if (!pattern.test(data)) {
             return false;
@@ -232,7 +230,7 @@ export const FormSummary = () => {
                         <SpanRed $error>{errors.city}</SpanRed>
                     </Wrapper>
                     <Wrapper>
-                        <label htmlFor="cv">Miasto</label>
+                        <label htmlFor="cv">Plik CV</label>
                         <StyledInput
                             id="cv"
                             type="file"
