@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { StyledSection } from "../../StyledSection";
 import { Container, Form, Paragraph, SpanBlue, StyledInput, StyledSelect, SubTitle, Title, Wrapper, SpanRed, Acknowledgement, StyledLink, Box } from "./styled";
@@ -19,6 +19,20 @@ export const FormSummary = () => {
     const [salaryExpectations, setSalaryExpectations] = useState(getFormData.salaryExpectations);
     const [errors, setErrors] = useState({});
     const [isSend, setIsSend] = useState(false);
+    const thanksRef = useRef(null);
+    const summaryRef = useRef(null);
+
+    useEffect(() => {
+        if(summaryRef.current) {
+            summaryRef.current.scrollIntoView({ behavior: 'smooth'});
+        }
+    }, []);
+
+    useEffect(() => {
+        if(isSend && thanksRef.current) {
+            thanksRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, [isSend]);
 
     const selectedJobId = useSelector(selectSelectedJobId);
 
@@ -127,7 +141,7 @@ export const FormSummary = () => {
 
     if(isSend) {
         return (
-            <StyledSection>
+            <StyledSection ref={thanksRef}>
                 <Acknowledgement>Dziękujemy za przesłanie formularza !</Acknowledgement>
                 <Box>
                     <StyledLink to="/">Przejdź do strony głównej</StyledLink>
@@ -137,7 +151,7 @@ export const FormSummary = () => {
     }
 
     return (
-        <StyledSection>
+        <StyledSection ref={summaryRef}>
             <Title>Podsumowanie formularza aplikacyjnego</Title>
             <Paragraph>
                 Dokonaj sprawdzenia danych oraz ewentualnej edycji. Aby ostatecznie wysłać formularz kliknij w przycisk “Wyślij”
