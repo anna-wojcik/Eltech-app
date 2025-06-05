@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Eltech-app/static/css/main.566ac412.css",
-    "main.js": "/Eltech-app/static/js/main.49d08e84.js",
+    "main.js": "/Eltech-app/static/js/main.efabd826.js",
     "static/js/453.058810f9.chunk.js": "/Eltech-app/static/js/453.058810f9.chunk.js",
     "static/media/service.png": "/Eltech-app/static/media/service.916067f4295b581a2e02.png",
     "static/media/photovoltaic-installations.png": "/Eltech-app/static/media/photovoltaic-installations.e7300edfc39ea84f0a0e.png",
@@ -37,11 +37,11 @@
     "static/media/menu.svg": "/Eltech-app/static/media/menu.85315daff5ff7207ef08eedbe24079fd.svg",
     "static/media/cross.svg": "/Eltech-app/static/media/cross.1de0afb6823eb5015808542691e3489b.svg",
     "main.566ac412.css.map": "/Eltech-app/static/css/main.566ac412.css.map",
-    "main.49d08e84.js.map": "/Eltech-app/static/js/main.49d08e84.js.map",
+    "main.efabd826.js.map": "/Eltech-app/static/js/main.efabd826.js.map",
     "453.058810f9.chunk.js.map": "/Eltech-app/static/js/453.058810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.566ac412.css",
-    "static/js/main.49d08e84.js"
+    "static/js/main.efabd826.js"
   ]
 }
